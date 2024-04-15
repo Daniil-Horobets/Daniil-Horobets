@@ -1,16 +1,19 @@
-### Hi there 👋
+# Hi there, I'm Daniil! 👋
 
-<!--
-**Daniil-Horobets/Daniil-Horobets** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+![Banner](assets/Banner.png)
 
-Here are some ideas to get you started:
+## About Me 🚀
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I'm a passionate **Software Engineer** with experience in **AI/ML**. I love tackling complex problems, learning new skills, and collaborating with diverse teams to create innovative solutions.
+
+- 🎓 Currently pursing MSc in **Information and Communication Technology at [FAU](https://www.fau.eu/)**
+- 🌍 Languages: **Java, Python, R, VHDL, C++**
+- 🛠️ Frameworks: **Spring, PyTorch**
+- 🗄️ Databeses: **MySQL, PostgreSQL**
+- 🧰 Tools and Technologies: **Git, Docker, Linux, Swagger, Postman, Maven, JPA, Hibernate, NumPy, Pandas**
+
+
+## Get in Touch via [LinkedIn](https://www.linkedin.com/in/daniil-horobets/) 📬
+![LinkedIn](assets/LinkedIn-QR.png)
+
+
