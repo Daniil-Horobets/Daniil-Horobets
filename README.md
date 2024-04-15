@@ -14,6 +14,7 @@ I'm a passionate **Software Engineer** with experience in **AI/ML**. I love tack
 
 
 ## Get in Touch via [LinkedIn](https://www.linkedin.com/in/daniil-horobets/) 📬
-![LinkedIn](assets/LinkedIn-QR.png)
-
+<div align="center">
+  <img src="assets/LinkedIn-QR.png" width="50%" alt="LinkedIn">
+</div>
 
