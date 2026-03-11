@@ -2,6 +2,12 @@
               
 <h1 align="center">Daniil Horobets</h1>
 <h3 align="center">AI/ML Expert</h3>
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&duration=3200&pause=900&center=true&vCenter=true&width=900&lines=Building+production+LLM+systems;RAG+%7C+Computer+Vision+%7C+MLOps;From+problem+understanding+to+deployment;AI+architecture+that+drives+business+value"
+    alt="Typing SVG"
+  />
+</p>
 
 <p align="center">
   I build production AI systems from problem understanding and model design
@@ -52,11 +58,21 @@
 </tr>
 </table>
 
-<p align="center">
-  <b>Problem → Data → Model → API → Deployment → Monitoring → Business Value</b>
-</p>
+## AI Delivery Lifecycle
+
+```mermaid
+flowchart LR
+    A[Problem] --> B[Data]
+    B --> C[Model]
+    C --> D[API]
+    D --> E[Deployment]
+    E --> F[Monitoring]
+    F --> G[Business Value]
+```
 
 ---
+
+
 
 ## How I Work
 
