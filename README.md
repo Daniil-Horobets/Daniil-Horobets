@@ -142,6 +142,26 @@ Assistive navigation project related to sidewalk understanding and environmental
 - **M.Sc. in Information and Communication Technology** — FAU Erlangen-Nürnberg  
 - **B.Sc. in Infocommunication Technologies**
 
+## Education
+
+<p align="left">
+  <img src="assets/stanford.png" alt="Stanford University" height="75"/><br/>
+  <b>Stanford University</b><br/>
+  Artificial Intelligence Graduate Certificate<br/><br/>
+</p>
+
+<p align="left">
+  <img src="assets/fau.png" alt="FAU Erlangen-Nürnberg" height="75"/><br/>
+  <b>FAU Erlangen-Nürnberg</b><br/>
+  M.Sc. in Information and Communication Technology<br/><br/>
+</p>
+
+<p align="left">
+  <img src="assets/bsuir.png" alt="BSUIR" height="75"/><br/>
+  <b>BSUIR</b><br/>
+  B.Sc. in Infocommunication Technologies<br/><br/>
+</p>
+
 ---
 
 ## Recognition
