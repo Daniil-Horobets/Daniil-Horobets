@@ -2,9 +2,10 @@
               
 <h1 align="center">Daniil Horobets</h1>
 <h3 align="center">AI/ML Expert</h3>
+
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&duration=3200&pause=900&center=true&vCenter=true&width=900&lines=Building+production+LLM+systems;RAG+%7C+Computer+Vision+%7C+MLOps;From+problem+understanding+to+deployment;AI+architecture+that+drives+business+value"
+    src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&duration=3200&pause=900&center=true&vCenter=true&width=900&color=36558B&lines=Building+production+LLM+systems;RAG+%7C+Computer+Vision+%7C+MLOps;From+problem+understanding+to+deployment;AI+architecture+that+drives+business+value"
     alt="Typing SVG"
   />
 </p>
@@ -15,15 +16,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/Daniil-Horobets">
-    <img src="https://img.shields.io/badge/LinkedIn-Daniil_Horobets-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="mailto:daniil.horobets.dev@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  <a href="https://github.com/Daniil-Horobets">
-    <img src="https://img.shields.io/badge/GitHub-Daniil--Horobets-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
+  <a href="https://www.linkedin.com/in/Daniil-Horobets"><img src="https://img.shields.io/badge/LinkedIn-Daniil_Horobets-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:daniil.horobets.dev@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://github.com/Daniil-Horobets"><img src="https://img.shields.io/badge/GitHub-Daniil--Horobets-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 </p>
 
 <p align="center">
@@ -33,58 +28,48 @@
 
 ---
 
-## Quick Snapshot
+## Quick overview
 
-<table>
+<div align="center">
+
+<table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td width="50%" valign="top" nowrap>
 
 ### What I build
 - LLM applications and AI assistants  
 - RAG pipelines and multilingual NLP systems  
 - Computer vision and real-time perception systems  
-- Forecasting, anomaly detection, and edge AI solutions  
+- Forecasting, anomaly detection, and edge AI deployment  <br/><br/>
 
 </td>
-<td width="50%" valign="top">
+<td width="50%" valign="top" nowrap>
 
 ### What I usually own
 - AI solution architecture  
 - Model lifecycle and MLOps  
 - Cloud deployment and platform integration  
-- Technical leadership and stakeholder communication  
+- Technical leadership and stakeholder communication  <br/><br/>
 
 </td>
 </tr>
 </table>
 
-## AI Delivery Lifecycle
-
-```mermaid
-flowchart LR
-    A[Problem] --> B[Data]
-    B --> C[Model]
-    C --> D[API]
-    D --> E[Deployment]
-    E --> F[Monitoring]
-    F --> G[Business Value]
-```
+</div>
 
 ---
 
-
-
-## How I Work
+## How I work
 
 <table>
 <tr>
 <td width="50%" valign="top">
   <b>Production AI</b><br/>
-  I turn ML ideas into systems that teams can ship and scale.
+  I turn ML ideas into systems that teams can ship and scale.<br/><br/>
 </td>
 <td width="50%" valign="top">
   <b>Architecture Thinking</b><br/>
-  I connect models, APIs, and infrastructure into one solution.
+  I connect models, APIs, and infrastructure into one solution.<br/><br/>
 </td>
 </tr>
 <tr>
@@ -99,14 +84,26 @@ flowchart LR
 </tr>
 </table>
 
+## AI Delivery Lifecycle
+
+```mermaid
+flowchart TD
+    A[Problem] --> B[Data]
+    B --> C[Model]
+    C --> D[API]
+    D --> E[Deployment]
+    E --> F[Monitoring]
+    F --> G[Business Value]
+```
+
 ---
 
 ## Tech Stack
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,pytorch,tensorflow,postgres,docker,kubernetes,aws,gcp,terraform&perline=9" />
-  </a>
+  <br/><br/>
+    <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,pytorch,tensorflow,sklearn,postgres,docker,kubernetes,aws,gcp,azure,terraform&perline=11" /></a>
+  <br/><br/>
 </p>
 
 <p align="center">
@@ -120,47 +117,31 @@ flowchart LR
 
 ---
 
-## Featured Projects
-
-### [MyInterior-AI](https://github.com/Daniil-Horobets/MyInterior-AI)
-Generative AI for interior design from sketch images to photorealistic room concepts.  
-**FastAPI · React · Stable Diffusion · ControlNet · Docker**
-
-### [One-vs-All-Image-Classifier](https://github.com/Daniil-Horobets/One-vs-All-Image-Classifier)
-Deep learning classifier for solar cell defect detection.  
-**PyTorch · Image Classification · Binary Relevance · F1-focused evaluation**
-
-### [Project SENSATION](https://lme.tf.fau.de/thesis/project-sensation-sidewalk-environment-detection-system-for-assistive-navigation/)
-Assistive navigation project related to sidewalk understanding and environmental perception.  
-**Computer Vision · Segmentation · Detection · Accessibility**
-
----
-
 ## Education
 
-- **Artificial Intelligence Graduate Certificate** — Stanford University  
-- **M.Sc. in Information and Communication Technology** — FAU Erlangen-Nürnberg  
-- **B.Sc. in Infocommunication Technologies**
-
-## Education
-
-<p align="left">
-  <img src="assets/stanford.png" alt="Stanford University" height="75"/><br/>
+<p>
+  <img src="assets/stanford.png" alt="Stanford University" height="55" align="left" hspace="12" />
   <b>Stanford University</b><br/>
-  Artificial Intelligence Graduate Certificate<br/><br/>
+  Artificial Intelligence Graduate Certificate
 </p>
 
-<p align="left">
-  <img src="assets/fau.png" alt="FAU Erlangen-Nürnberg" height="75"/><br/>
+<br clear="left"/>
+
+<p>
+  <img src="assets/fau.png" alt="FAU Erlangen-Nürnberg" height="55" align="left" hspace="12" />
   <b>FAU Erlangen-Nürnberg</b><br/>
-  M.Sc. in Information and Communication Technology<br/><br/>
+  M.Sc. in Information and Communication Technology
 </p>
 
-<p align="left">
-  <img src="assets/bsuir.png" alt="BSUIR" height="75"/><br/>
+<br clear="left"/>
+
+<p>
+  <img src="assets/bsuir.png" alt="BSUIR" height="55" align="left" hspace="12" />
   <b>BSUIR</b><br/>
-  B.Sc. in Infocommunication Technologies<br/><br/>
+  B.Sc. in Infocommunication Technologies
 </p>
+
+<br clear="left"/>
 
 ---
 
@@ -175,10 +156,6 @@ Assistive navigation project related to sidewalk understanding and environmental
 ## Connect With Me
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/Daniil-Horobets">
-    <img src="https://img.shields.io/badge/LinkedIn-Let's_connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="mailto:daniil.horobets.dev@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
+  <a href="https://www.linkedin.com/in/Daniil-Horobets"><img src="https://img.shields.io/badge/LinkedIn-Let's_connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:daniil.horobets.dev@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
