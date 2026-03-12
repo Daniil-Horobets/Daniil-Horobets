@@ -119,6 +119,7 @@ flowchart TD
 
 ## Education
 
+</b><br/>
 <p>
   <img src="assets/stanford.png" alt="Stanford University" height="55" align="left" hspace="12" />
   <b>Stanford University</b><br/>
