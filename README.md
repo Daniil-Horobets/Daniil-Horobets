@@ -86,85 +86,88 @@
 
 ## AI Delivery Lifecycle
 
+From business discovery to production AI that drives measurable results.
+
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"background":"#0D1117","primaryColor":"#111827","primaryTextColor":"#F1F5F9","primaryBorderColor":"#334155","lineColor":"#8291A7","clusterBkg":"#151D2B","clusterBorder":"#344256","textColor":"#F1F5F9","edgeLabelBackground":"#0D1117","fontFamily":"Inter, Segoe UI, Arial, sans-serif","fontSize":"14px"},"flowchart":{"curve":"basis","nodeSpacing":26,"rankSpacing":30,"htmlLabels":true}}}%%
 flowchart TB
-    START(["Business challenge / opportunity"]):::entry
+    START(["<b>BUSINESS OPPORTUNITY</b><br/>From idea to measurable impact"]):::hero
 
-    subgraph DISCOVERY["01  /  DISCOVER & ALIGN"]
+    subgraph S1["01  /  DISCOVER & ALIGN"]
         direction LR
-        NEED["Understand the problem<br/>Stakeholders · users · workflows"]:::strategy
-        TARGET["Define measurable success<br/>KPIs · ROI · quality · SLOs"]:::strategy
-        TRUST["Set delivery constraints<br/>Privacy · security · budget"]:::strategy
-        NEED --> TARGET --> TRUST
+        A["<b>Problem framing</b><br/>Users · workflows · risks"]:::blue
+        B["<b>Success contract</b><br/>KPIs · ROI · SLOs · budget"]:::blue
+        A --> B
     end
 
-    subgraph FEASIBILITY["02  /  DATA & FEASIBILITY"]
+    subgraph S2["02  /  DATA & FEASIBILITY"]
         direction LR
-        AUDIT["Assess data readiness<br/>Sources · rights · quality"]:::data
-        BASE["Prove feasibility<br/>Baselines · experiments · PoC"]:::data
-        GO{"Viable business<br/>and technical case?"}:::gate
-        AUDIT --> BASE --> GO
+        C["<b>Data readiness</b><br/>Access · quality · governance"]:::cyan
+        D["<b>Baseline & PoC</b><br/>Benchmarks · cost · feasibility"]:::cyan
+        E{"Go /<br/>re-scope?"}:::decision
+        C --> D --> E
     end
 
-    subgraph BUILD["03  /  ARCHITECT & BUILD"]
+    subgraph S3["03  /  ARCHITECT & BUILD"]
         direction TB
-        CHOICE{"Choose the simplest<br/>viable AI approach"}:::gate
-        RAG["LLM / RAG<br/>Ingest · embed · retrieve · ground"]:::model
-        VISION["Computer vision / ML<br/>Label · train · tune"]:::model
-        AGENTS["Agentic / hybrid AI<br/>Tools · orchestration · guardrails"]:::model
-        SYSTEM["Integrate end to end<br/>Pipelines · APIs · UX · human review"]:::model
-        CHOICE -->|LLM / RAG| RAG
-        CHOICE -->|CV / ML| VISION
-        CHOICE -->|Agents| AGENTS
-        RAG --> SYSTEM
-        VISION --> SYSTEM
-        AGENTS --> SYSTEM
+        F{"Select AI<br/>approach"}:::decision
+        G["<b>LLM / RAG</b><br/>Retrieval · grounding"]:::teal
+        H["<b>CV / Predictive ML</b><br/>Features · training"]:::teal
+        I["<b>Agentic systems</b><br/>Tools · guardrails"]:::teal
+        J["<b>Solution integration</b><br/>Pipelines · APIs · UX · human review"]:::teal
+        F --> G & H & I
+        G & H & I --> J
     end
 
-    subgraph EVALUATION["04  /  EVALUATE & GOVERN"]
+    subgraph S4["04  /  EVALUATE & GOVERN"]
         direction LR
-        OFFLINE["Evaluate task quality<br/>Golden sets · accuracy · groundedness"]:::validation
-        NONFUNC["Validate trust & SLOs<br/>Safety · robustness · latency · cost"]:::validation
-        GATE{"Release gates<br/>passed?"}:::gate
-        OFFLINE --> GATE
-        NONFUNC --> GATE
+        K["<b>Task evaluation</b><br/>Golden sets · accuracy · groundedness"]:::violet
+        L["<b>Production readiness</b><br/>Safety · latency · resilience · cost"]:::violet
+        M{"Release<br/>gate"}:::decision
+        K --> M
+        L --> M
     end
 
-    subgraph PRODUCTION["05  /  DEPLOY & SCALE"]
+    subgraph S5["05  /  DEPLOY & SCALE"]
         direction LR
-        OPS["MLOps / LLMOps<br/>Tracking · versioning · CI/CD"]:::operations
-        SERVE["Production serving<br/>Cloud / edge · APIs · containers"]:::operations
-        ROLL["Progressive rollout<br/>Canary · rollback · scaling"]:::operations
-        OPS --> SERVE --> ROLL
+        N["<b>MLOps / LLMOps</b><br/>Versioning · CI/CD · lineage"]:::indigo
+        O["<b>Production serving</b><br/>Cloud / edge · APIs · scaling"]:::indigo
+        P["<b>Safe rollout</b><br/>Canary · rollback · security"]:::indigo
+        N --> O --> P
     end
 
-    subgraph OBSERVABILITY["06  /  MONITOR & OPTIMIZE"]
+    subgraph S6["06  /  OBSERVE & OPTIMIZE"]
         direction LR
-        WATCH["Monitor live systems<br/>Quality · drift · latency · cost"]:::operations
-        LEARN["Learn from production<br/>Feedback · eval sets · A/B tests"]:::operations
-        VALUE(["Measured business value<br/>Adoption · KPI uplift · ROI"]):::outcome
-        WATCH --> LEARN --> VALUE
+        Q["<b>Monitor</b><br/>Quality · drift · latency · spend"]:::blue
+        R["<b>Improve</b><br/>Feedback · A/B tests · retraining"]:::blue
+        Q --> R
     end
 
-    START --> DISCOVERY
-    DISCOVERY --> FEASIBILITY
-    FEASIBILITY -->|Go| BUILD
-    FEASIBILITY -. Reframe .-> DISCOVERY
-    BUILD --> EVALUATION
-    EVALUATION -->|Pass| PRODUCTION
-    EVALUATION -. Iterate .-> BUILD
-    PRODUCTION --> OBSERVABILITY
-    OBSERVABILITY -. Continuous improvement .-> BUILD
+    RESULT(["<b>MEASURABLE BUSINESS VALUE</b><br/>Adoption · KPI uplift · ROI"]):::success
 
-    classDef entry fill:#254B7B,stroke:#183457,color:#FFFFFF,stroke-width:2px;
-    classDef strategy fill:#EAF1FC,stroke:#6385BC,color:#203B60,stroke-width:1.5px;
-    classDef data fill:#E7F4FA,stroke:#5291AA,color:#184D63,stroke-width:1.5px;
-    classDef model fill:#E5F6F1,stroke:#3A9A83,color:#135B4C,stroke-width:1.5px;
-    classDef validation fill:#F1EDFE,stroke:#8A75BF,color:#473478,stroke-width:1.5px;
-    classDef gate fill:#FFF1D9,stroke:#C9993D,color:#79500F,stroke-width:2px;
-    classDef operations fill:#EDF1FE,stroke:#7585C7,color:#344377,stroke-width:1.5px;
-    classDef outcome fill:#DFF4E8,stroke:#39966A,color:#1B6143,stroke-width:2px;
+    START --> S1 --> S2 -->|Go| S3 --> S4 -->|Pass| S5 --> S6 --> RESULT
+
+    classDef hero fill:#183A66,stroke:#60A5FA,color:#FFFFFF,stroke-width:2px;
+    classDef blue fill:#18283D,stroke:#60A5FA,color:#F1F5F9,stroke-width:1.5px;
+    classDef cyan fill:#102D3A,stroke:#38BDF8,color:#F1F5F9,stroke-width:1.5px;
+    classDef teal fill:#10332F,stroke:#34D399,color:#F1F5F9,stroke-width:1.5px;
+    classDef violet fill:#2C2144,stroke:#A78BFA,color:#F1F5F9,stroke-width:1.5px;
+    classDef indigo fill:#1E2749,stroke:#818CF8,color:#F1F5F9,stroke-width:1.5px;
+    classDef decision fill:#3A2C17,stroke:#FBBF24,color:#FEF3C7,stroke-width:2px;
+    classDef success fill:#103D31,stroke:#4ADE80,color:#DCFCE7,stroke-width:2px;
+
+    style S1 fill:#141E2E,stroke:#334965,stroke-width:1px,color:#E2E8F0
+    style S2 fill:#13232E,stroke:#285169,stroke-width:1px,color:#E2E8F0
+    style S3 fill:#122823,stroke:#276258,stroke-width:1px,color:#E2E8F0
+    style S4 fill:#241B35,stroke:#564279,stroke-width:1px,color:#E2E8F0
+    style S5 fill:#1A2140,stroke:#485A93,stroke-width:1px,color:#E2E8F0
+    style S6 fill:#141E2E,stroke:#334965,stroke-width:1px,color:#E2E8F0
+
+    linkStyle default stroke:#8190A5,stroke-width:1.5px;
 ```
+
+**Every release is a learning cycle:** production telemetry and user feedback inform the next round of scoping, model improvements, evaluation, and rollout.
+
 
 ---
 
