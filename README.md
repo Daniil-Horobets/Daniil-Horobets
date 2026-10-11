@@ -87,13 +87,83 @@
 ## AI Delivery Lifecycle
 
 ```mermaid
-flowchart TD
-    A[Problem] --> B[Data]
-    B --> C[Model]
-    C --> D[API]
-    D --> E[Deployment]
-    E --> F[Monitoring]
-    F --> G[Business Value]
+flowchart TB
+    START(["Business challenge / opportunity"]):::entry
+
+    subgraph DISCOVERY["01  /  DISCOVER & ALIGN"]
+        direction LR
+        NEED["Understand the problem<br/>Stakeholders · users · workflows"]:::strategy
+        TARGET["Define measurable success<br/>KPIs · ROI · quality · SLOs"]:::strategy
+        TRUST["Set delivery constraints<br/>Privacy · security · budget"]:::strategy
+        NEED --> TARGET --> TRUST
+    end
+
+    subgraph FEASIBILITY["02  /  DATA & FEASIBILITY"]
+        direction LR
+        AUDIT["Assess data readiness<br/>Sources · rights · quality"]:::data
+        BASE["Prove feasibility<br/>Baselines · experiments · PoC"]:::data
+        GO{"Viable business<br/>and technical case?"}:::gate
+        AUDIT --> BASE --> GO
+    end
+
+    subgraph BUILD["03  /  ARCHITECT & BUILD"]
+        direction TB
+        CHOICE{"Choose the simplest<br/>viable AI approach"}:::gate
+        RAG["LLM / RAG<br/>Ingest · embed · retrieve · ground"]:::model
+        VISION["Computer vision / ML<br/>Label · train · tune"]:::model
+        AGENTS["Agentic / hybrid AI<br/>Tools · orchestration · guardrails"]:::model
+        SYSTEM["Integrate end to end<br/>Pipelines · APIs · UX · human review"]:::model
+        CHOICE -->|LLM / RAG| RAG
+        CHOICE -->|CV / ML| VISION
+        CHOICE -->|Agents| AGENTS
+        RAG --> SYSTEM
+        VISION --> SYSTEM
+        AGENTS --> SYSTEM
+    end
+
+    subgraph EVALUATION["04  /  EVALUATE & GOVERN"]
+        direction LR
+        OFFLINE["Evaluate task quality<br/>Golden sets · accuracy · groundedness"]:::validation
+        NONFUNC["Validate trust & SLOs<br/>Safety · robustness · latency · cost"]:::validation
+        GATE{"Release gates<br/>passed?"}:::gate
+        OFFLINE --> GATE
+        NONFUNC --> GATE
+    end
+
+    subgraph PRODUCTION["05  /  DEPLOY & SCALE"]
+        direction LR
+        OPS["MLOps / LLMOps<br/>Tracking · versioning · CI/CD"]:::operations
+        SERVE["Production serving<br/>Cloud / edge · APIs · containers"]:::operations
+        ROLL["Progressive rollout<br/>Canary · rollback · scaling"]:::operations
+        OPS --> SERVE --> ROLL
+    end
+
+    subgraph OBSERVABILITY["06  /  MONITOR & OPTIMIZE"]
+        direction LR
+        WATCH["Monitor live systems<br/>Quality · drift · latency · cost"]:::operations
+        LEARN["Learn from production<br/>Feedback · eval sets · A/B tests"]:::operations
+        VALUE(["Measured business value<br/>Adoption · KPI uplift · ROI"]):::outcome
+        WATCH --> LEARN --> VALUE
+    end
+
+    START --> DISCOVERY
+    DISCOVERY --> FEASIBILITY
+    FEASIBILITY -->|Go| BUILD
+    FEASIBILITY -. Reframe .-> DISCOVERY
+    BUILD --> EVALUATION
+    EVALUATION -->|Pass| PRODUCTION
+    EVALUATION -. Iterate .-> BUILD
+    PRODUCTION --> OBSERVABILITY
+    OBSERVABILITY -. Continuous improvement .-> BUILD
+
+    classDef entry fill:#254B7B,stroke:#183457,color:#FFFFFF,stroke-width:2px;
+    classDef strategy fill:#EAF1FC,stroke:#6385BC,color:#203B60,stroke-width:1.5px;
+    classDef data fill:#E7F4FA,stroke:#5291AA,color:#184D63,stroke-width:1.5px;
+    classDef model fill:#E5F6F1,stroke:#3A9A83,color:#135B4C,stroke-width:1.5px;
+    classDef validation fill:#F1EDFE,stroke:#8A75BF,color:#473478,stroke-width:1.5px;
+    classDef gate fill:#FFF1D9,stroke:#C9993D,color:#79500F,stroke-width:2px;
+    classDef operations fill:#EDF1FE,stroke:#7585C7,color:#344377,stroke-width:1.5px;
+    classDef outcome fill:#DFF4E8,stroke:#39966A,color:#1B6143,stroke-width:2px;
 ```
 
 ---
