@@ -93,7 +93,7 @@ From business discovery to production AI that drives measurable results.
 flowchart TB
     START(["<b>BUSINESS OPPORTUNITY</b><br/>From idea to measurable impact"]):::hero
 
-    subgraph S1["01  /  DISCOVER & ALIGN"]
+    subgraph S1["01  /  DISCOVER"]
         direction LR
         A["<b>Problem framing</b><br/>Users · workflows · risks"]:::blue
         B["<b>Success contract</b><br/>KPIs · ROI · SLOs · budget"]:::blue
@@ -108,7 +108,7 @@ flowchart TB
         C --> D --> E
     end
 
-    subgraph S3["03  /  ARCHITECT & BUILD"]
+    subgraph S3["03  /  ARCHITECT"]
         direction TB
         F{"Select AI<br/>approach"}:::decision
         G["<b>LLM / RAG</b><br/>Retrieval · grounding"]:::teal
@@ -119,7 +119,7 @@ flowchart TB
         G & H & I --> J
     end
 
-    subgraph S4["04  /  EVALUATE & GOVERN"]
+    subgraph S4["04  /  EVALUATE"]
         direction LR
         K["<b>Task evaluation</b><br/>Golden sets · accuracy · groundedness"]:::violet
         L["<b>Production readiness</b><br/>Safety · latency · resilience · cost"]:::violet
@@ -128,7 +128,7 @@ flowchart TB
         L --> M
     end
 
-    subgraph S5["05  /  DEPLOY & SCALE"]
+    subgraph S5["05  /  DEPLOY"]
         direction LR
         N["<b>MLOps / LLMOps</b><br/>Versioning · CI/CD · lineage"]:::indigo
         O["<b>Production serving</b><br/>Cloud / edge · APIs · scaling"]:::indigo
@@ -136,7 +136,7 @@ flowchart TB
         N --> O --> P
     end
 
-    subgraph S6["06  /  OBSERVE & OPTIMIZE"]
+    subgraph S6["06  /  OBSERVE"]
         direction LR
         Q["<b>Monitor</b><br/>Quality · drift · latency · spend"]:::blue
         R["<b>Improve</b><br/>Feedback · A/B tests · retraining"]:::blue
