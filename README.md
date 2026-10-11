@@ -146,6 +146,7 @@ flowchart TB
     RESULT(["<b>MEASURABLE BUSINESS VALUE</b><br/>Adoption · KPI uplift · ROI"]):::success
 
     START --> S1 --> S2 -->|Go!| S3 --> S4 --> S5 --> S6 --> RESULT
+    S2 -.->|re-scope| S1
 
     classDef hero fill:#183A66,stroke:#60A5FA,color:#FFFFFF,stroke-width:2px;
     classDef blue fill:#18283D,stroke:#60A5FA,color:#F1F5F9,stroke-width:1.5px;
