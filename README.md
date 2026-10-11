@@ -93,7 +93,7 @@ From business discovery to production AI that drives measurable results.
 flowchart TB
     START(["<b>BUSINESS OPPORTUNITY</b><br/>From idea to measurable impact"]):::hero
 
-    subgraph S1["01  /  DISCOVER       "]
+    subgraph S1["01  /  DISCOVER       ."]
         direction LR
         A["<b>Problem framing</b><br/>Users · workflows · risks"]:::blue
         B["<b>Success contract</b><br/>KPIs · ROI · SLOs · budget"]:::blue
